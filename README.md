@@ -13,33 +13,18 @@ Terraform deploy service
 .
 ├── README.md
 ├── global
-│   ├── credential
-│   │   ├── global.tf
-│   │   └── providers.auto.tfvars
-│   ├── iam
-│   │   ├── README.md
-│   │   ├── iam-assumable-role-eks-master.tf
-│   │   ├── iam-assumable-role-eks-node.tf
-│   │   ├── main.tf
-│   │   ├── outputs.tf
-│   │   ├── terraform.tf
-│   │   └── variables.tf
-│   └── s3
+│   └── credential
+│       ├── global.tf
+│       ├── main.tf
+│       └── providers.auto.tfvars
 ├── modules
-│   └── aws
-│       ├── eks-master
-│       ├── iam
-│       ├── security-group
+│   └── README.md
+├── prod
+│   └── ap-southeast-1-Singapore
+│       ├── services
 │       └── vpc
-└── prod-webextension
-    ├── ap-southeast-1-Singapore
-    │   ├── data-storage
-    │   ├── services
-    │   └── vpc
-    ├── eu-west-1-Ireland
-    │   ├── services
-    │   └── vpc
-    └── us-east-2-Ohio
+└── stag
+    └── ap-southeast-1-Singapore
         ├── services
         └── vpc
 
